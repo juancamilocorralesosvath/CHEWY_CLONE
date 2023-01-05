@@ -16,6 +16,9 @@ ul {
 li{
     float: left;
 }
+.content {
+    
+}
 /*-------------------------Dropdown---------------------*/
 .dropdown {
     position: relative;
