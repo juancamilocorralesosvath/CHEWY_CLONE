@@ -2,20 +2,21 @@ body {
     background-color: #eee;
 }
 /*-------------------------Navbar---------------------*/
-ul {
+ #nav {
     margin: 0;
     padding: 0;
     /* Si colocamos el overflow hidden, deja de funcionar
-    overflow: hidden;*/
+    overflow: hidden; */
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #4caf50;
-}
-li{
+} 
+/* deprecated */
+/* li{
     float: left;
-}
+} */
     
 /*-------------------------Dropdown---------------------*/
 .dropdown {
