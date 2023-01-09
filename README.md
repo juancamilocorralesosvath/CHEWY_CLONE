@@ -1,4 +1,4 @@
 # CHEWY_CLONE
 Clone of the Chewy website
-#Authors
+# Authors
 Created by @luisfegz and @juancamilocorralesosvath
