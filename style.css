@@ -4,7 +4,7 @@ body {
 /*-------------------------Navbar---------------------*/
  #nav {
     margin: 0;
-    padding: 0;
+    padding: 0px 5px;
     /* Si colocamos el overflow hidden, deja de funcionar
     overflow: hidden; */
     position:fixed;
@@ -12,6 +12,9 @@ body {
     left: 0;
     width: 100%;
     background-color: #4caf50;
+    height: 40px;
+    display: flex;
+    align-items: center;
 } 
 /* deprecated 
  li{
@@ -20,17 +23,21 @@ body {
     
 /*-------------------------Dropdown---------------------*/
 .dropdown {
-    position: relative;
+    
     display: inline-block;
     margin: 0;
+    height: 100%;
 }
 .dropdown-btn {
+    display: flex;
     background-color: #4caf50;
     color: white;
-    padding: 16px;
+    align-items: center;
+    /*padding: 16px; Esto no va */
     font-size: 16px;
     border: none;
     cursor: pointer;
+    height: 100%;
 }
 /* Visualizar (display:block) / Funcional(display:none) */
 .dropdown-content {
@@ -58,3 +65,37 @@ body {
 .content{
     margin-top: 75px;
 }
+/* Hamburger Menu */
+.hamb-menu {
+    position: absolute;
+    z-index:1000; /* 3era dimension (profundidad)*/
+    display: none;
+    flex-direction: column;
+    /* Mejor que usar margins -> justify-content: space-around */
+    justify-content: space-around;
+    
+    height: 30px;
+    width: 30px;
+}
+
+.hamb-menu__line {
+    width: 99%;
+    height: 4px;
+    background-color: #eee;
+    /* margin: 10px 0px; Display: flex ya lo esta haciendo */
+    border-radius: 55px;
+}
+/* Hamburger Menu */
+
+/* Responsive Design */
+@media (max-width:768px) {
+
+    .hamb-menu {
+        display: flex;
+    }
+    
+    .dropdown-btn {
+        display: none; 
+    }
+} 
+
