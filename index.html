@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    
     <!--                Navbar(ul, li)                        -->
     <ul id="nav" >
-      <!------------Boton sin utilidad CHEWY --------------------
+    <!------------Boton sin utilidad CHEWY --------------------
         + Estetico de redireccion siempre al mismo inicio )   -->
 
-        <!-- Hamburguer Menu (Componentes sin React)-->
-        
-        <div class="hamb-menu">
+        <!-- Hamburguer Menu (Componentes sin React) Menu desplegable con JS -->
+        <div id="hamb-menu" class="hamb-menu">
             <!-- Metodologia BEM -->
             <div class="hamb-menu__line"></div>
             <div class="hamb-menu__line"></div>
@@ -60,11 +60,94 @@
                 <a href="#">your cart is empty!</a>
             </div>
         </div>
+
+        <!--                            Search Bar                               -->
+        <div class="search">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search" />
+                    <span class="input-group-btn">
+                        <button type="text" class="btn">
+                            <span class="glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
     </ul>
-    
-    <div class="content">
-        <p>Xd</p>
-    </div>   
+
+    <!-- menu desplegable (list) -->
+    <div id="display-list" class="display-list">
+        <!-- Contenedor / USAR MAS ADELANTE FRAMEWORKS -->
+        <!-- DOG -->
+        <div class="display-list__container">
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Dog</h3>
+                    &#62;
+                </button>
+            </div>
+            <!-- CAT -->
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Cat</h3>
+                    &#62;
+                </button>
+            </div>
+            <!-- Shop All Pets -->
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Shop All Pets</h3>
+                    &#62;
+                </button>
+            </div>
+
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Pharmacy</h3>
+                    &#62;
+                </button>
+            </div>
+
+            
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Shop for Pet Parents</h3>
+                    &#62;
+                </button>
+            </div>
+
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Brands</h3>
+                    &#62;
+                </button>
+            </div>
+
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Chewy Picks</h3>
+                    &#62;
+                </button>
+            </div>
+
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Give Back</h3>
+                    &#62;
+                </button>
+            </div>
+
+            <div class="display-list__category">
+                <button class="display-list__btn">
+                    <h3>Today's Deals</h3>
+                    &#62;
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>  
 </body>
 </html>
-<script src="/main.js"></script>
+

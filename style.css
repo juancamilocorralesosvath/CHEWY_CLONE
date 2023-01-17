@@ -62,9 +62,7 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.content{
-    margin-top: 75px;
-}
+
 /* Hamburger Menu */
 .hamb-menu {
     position: absolute;
@@ -93,9 +91,34 @@ body {
     .hamb-menu {
         display: flex;
     }
-    
+
     .dropdown-btn {
         display: none; 
     }
 } 
 
+/* Elementos del Hamb-menu */
+.display-list {
+    top: 40px;
+    height: calc(100vh - 40px);
+    width: 100%;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+/* Elemento para c/u del contenedor */
+.display-list__container {
+    width: 100%;
+}
+/* Elemento para c/u de las categorias */
+.display-list__category {
+    width: 100%;
+}
+/* Elemento para c/u del boton */
+.display-list__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+}
