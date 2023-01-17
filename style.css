@@ -122,3 +122,25 @@ body {
     align-items: center;
     padding: 8px 10px;
 }
+/* Search bar */
+.form-control{
+    border: 0px solid #000;
+    width: 80%;  
+}
+
+
+
+.navbar-form {
+    border: 0px solid #000;
+    width: 100%;
+    
+}
+
+.input-group-btn {
+    width: 20%;
+    background-color: white;
+}
+
+.btn {
+    width: 100%;
+}
