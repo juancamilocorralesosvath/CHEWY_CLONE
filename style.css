@@ -12,10 +12,17 @@ body {
     left: 0;
     width: 100%;
     background-color: #4caf50;
-    height: 40px;
+    height: 70px;
     display: flex;
     align-items: center;
 } 
+.main_nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 /* deprecated 
  li{
     float: left;
@@ -38,6 +45,10 @@ body {
     border: none;
     cursor: pointer;
     height: 100%;
+}
+#brand{
+    font-family: 'custom_chewy';
+    font-size: 2.5em;
 }
 /* Visualizar (display:block) / Funcional(display:none) */
 .dropdown-content {
@@ -147,7 +158,6 @@ body {
     width: 100%;
 }
 .search-bar{
-    margin-left: 50px;
     background-color: white;
     border-radius: 50px;
 }
@@ -156,4 +166,14 @@ body {
     outline: none;
     border-radius: 50px;
     padding: 5px;
+}
+
+/* font'family chewy */
+@font-face {
+    font-family: 'custom_chewy';
+    src: url('PORKYS_.TTF') format('truetype'),
+         url('PORKH___.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
