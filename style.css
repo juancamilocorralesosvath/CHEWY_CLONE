@@ -21,7 +21,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 /* deprecated 
  li{
@@ -94,6 +93,8 @@ body {
     /* margin: 10px 0px; Display: flex ya lo esta haciendo */
     border-radius: 55px;
 }
+
+
 /* Hamburger Menu */
 
 /* Responsive Design */
@@ -167,6 +168,7 @@ body {
     border-radius: 50px;
     padding: 5px;
 }
+
 
 /* font'family chewy */
 @font-face {
