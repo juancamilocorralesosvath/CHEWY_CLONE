@@ -68,28 +68,7 @@
                     <a href="#">your cart is empty!</a>
                 </div>
             </div>
-
         </div>
-
-
-
-        <!--                            Search Bar                               -->
-<!--         <div class="search">
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input class="form-control" placeholder="search" />
-                    <span class="input-group-btn">
-                        <button type="text" class="btn">
-                            <span class="glyphicon-search" aria-hidden="true">&#128269;</span>
-                        </button>
-                    </span>
-                </div>
-            </form>
-        </div> -->
-
-        
-
-        
     </ul>
 
     <!-- menu desplegable (list) -->
@@ -162,6 +141,67 @@
             </div>
 
         </div>
+    </div>
+<!--------------------------------- Contenedor de SlidesShow ------------------------------------ -->
+    <div class="content-slideshow">
+        <div class="slider">
+            <div class="slides">
+    
+                <!--===== radio      buttons    start  ====== -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--===== radio      buttons     end  ======= -->
+            
+                <!-- =========== slide images start ============-->
+                <div class="slide first">
+                    <img src="./assets/imagen_1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/imagen_2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/imagen_3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/imagen_1.jpg" alt="">
+                </div>
+                <!-- =========== slide images e n d ============-->
+                    
+                <!-- ========= Automatic Navigationn Start ==========-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- ========= Automatic Navigationn E n d ==========-->
+            </div>
+    
+    
+                <!-- ========= Manual Navigation start ==========-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!-- ========= Manual Navigation E n d  ==========-->
+        </div>
+        <!-- image slider end-->
+    
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).Checked = true;
+                counter++;
+                if(counter > 3){
+                    conter = 1;
+                }
+            }, 5000);
+        </script>
+        
     </div>
     <script src="main.js"></script>  
 </body>
